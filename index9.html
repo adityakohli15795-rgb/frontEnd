@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Fragrance Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" width="125px" alt="logo">
+        </div>
+        <nav>
+           <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index4.html">PRODUCTS</a></li>
+                <li><a href="index2.html">ABOUT</a></li>
+                <li><a href="index3.html">CONTACT US</a></li>
+                <li><a href="index5.html">ACCOUNT</a></li>
+                <li><a href="index6.html">NEW ARRIVALS</a></li>
+                <li><a href="index7.html">SHOP NOW</a></li>
+                <li><a href="index8.html">DEALS</a></li>
+                <li><a href="index9.html">🛒 CART</a></li>
+                <li><a href="index10.html">BUY NOW</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search perfumes...">
+            <button id="searchBtn">&#128269;</button>
+        </div>
+    </div>
+
+    <div class="cart-page">
+        <div class="container">
+            <h1>🛒 My Cart</h1>
+            <p class="cart-subtitle">Items you have added to your cart</p>
+
+            <div class="cart-box">
+                <div class="cart-items" id="cartItemsList">
+                    <p id="emptyCartMsg">Your cart is empty! Go add some products 😊</p>
+                <up
+                <div class="cart-summary" id="cartSummary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Total Items:</span>
+                        <span id="totalItems">0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotalPrice">₹0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery:</span>
+                        <span>FREE 🚚</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total-row">
+                        <span>Total:</span>
+                        <span id="totalPrice">₹0</span>
+                    </div>
+                    <a href="index10.html" class="btn checkout-btn">Proceed to Checkout ➜</a>
+                    <button class="btn clear-btn" id="clearCartBtn">Clear Cart 🗑️</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="copyright">© 2026 Fragrance Haven</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

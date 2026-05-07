@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now - Fragrance Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<up
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" width=125px alt="logo">
+        </div>
+        <nav>
+           <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index4.html">PRODUCTS</a></li>
+                <li><a href="index2.html">ABOUT</a></li>
+                <li><a href="index3.html">CONTACT US</a></li>
+                <li><a href="index5.html">ACCOUNT</a></li>
+                <li><a href="index6.html">NEW ARRIVALS</a></li>
+                <li><a href="index7.html">SHOP NOW</a></li>
+                <li><a href="index8.html">DEALS</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search perfumes...">
+            <button id="searchBtn">&#128269;</button>
+        </div>
+    </div>
+
+    <div class="shop">
+        <div class="container">
+            <h1>Shop Our Collection</h1>
+            <div class="category-filter">
+                <button class="category-btn active-cat" data-category="all">All</button>
+                <button class="category-btn" data-category="men">Men</button>
+                <button class="category-btn" data-category="women">Women</button>
+                <button class="category-btn" data-category="unisex">Unisex</button>
+            </div>
+
+            <div class="filter">
+                <select id="sortPrice">
+                    <option value="default">Sort by Price</option>
+                    <option value="lowtohigh">Low to High</option>
+                    <option value="hightolow">High to Low</option>
+                </select>
+            </div>
+
+            <div class="shop-grid">
+                <div class="shop-card" data-category="men">
+                    <img src="picture1.jpeg" alt="Royal Oud">
+                    <h3>Royal Oud</h3>
+                    <p>₹1999</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="men">
+                    <img src="picture6.jpeg" alt="Dark Musk">
+                    <h3>Dark Musk</h3>
+                    <p>₹1799</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="shop-card" data-category="women">
+                    <img src="pitcture2.jpeg" alt="Midnight Rose">
+                    <h3>Midnight Rose</h3>
+                    <p>₹1499</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="women">
+                    <img src="picture5.jpeg" alt="Vanilla Mist">
+                    <h3>Vanilla Mist</h3>
+                    <p>₹999</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+                <div class="shop-card" data-category="unisex">
+                    <img src="picture4.jpeg" alt="Ocean Breeze">
+                    <h3>Ocean Breeze</h3>
+                    <p>₹1299</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="unisex">
+                    <img src="picture7.jpeg" alt="Golden Essence">
+                    <h3>Golden Essence</h3>
+                    <p>₹2199</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="copyright">© 2026 Fragrance Haven</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

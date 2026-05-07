@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Fragrance Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" width="125px" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index4.html">PRODUCTS</a></li>
+                <li><a href="index2.html">ABOUT</a></li>
+                <li><a href="index3.html">CONTACT US</a></li>
+                <li><a href="index5.html">ACCOUNT</a></li>
+                <li><a href="index6.html">NEW ARRIVALS</a></li>
+                <li><a href="index7.html">SHOP NOW</a></li>
+                <li><a href="index8.html">DEALS</a></li>
+                <li><a href="index9.html">🛒 CART</a></li>
+                <li><a href="index10.html">BUY NOW</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search perfumes...">
+            <button id="searchBtn">&#128269;</button>
+        </div>
+    </div>
+
+    <div class="checkout-page">
+        <div class="container">
+            <h1>🛍️ Checkout</h1>
+            <p class="checkout-subtitle">Fill in your details to place the order</p>
+
+            <div class="checkout-box">
+                <div class="checkout-form-wrapper" style="flex:1; min-width:300px;">
+
+                    <form id="checkoutForm">
+                        <div class="checkout-form">
+                            <h3>📦 Delivery Details</h3>
+                            <div class="form-row">
+                                <input type="text" id="firstName" placeholder="First Name" required>
+                                <input type="text" id="lastName" placeholder="Last Name" required>
+                            </div>
+                            <input type="text" id="address" placeholder="Full Address" required>
+                            <div class="form-row">
+                                <input type="text" id="city" placeholder="City" required>
+                                <input type="text" id="pincode" placeholder="Pincode">
+                            </div>
+                            <input type="text" id="phone" placeholder="Phone Number" required>
+                            <input type="email" id="checkoutEmail" placeholder="Email Address">
+                        </div>
+                        <div class="checkout-form" style="margin-top:20px;">
+                            <h3>💳 Payment Method</h3>
+                            <select id="paymentMethod">
+                                <option value="">-- Select Payment Method --</option>
+                                <option value="cod">Cash on Delivery</option>
+                                <option value="upi">UPI Payment</option>
+                                <option value="card">Credit / Debit Card</option>
+                                <option value="netbanking">Net Banking</option>
+                            </select>
+                            <div id="upiField" style="display:none;">
+                                <input type="text" id="upiId" placeholder="Enter your UPI ID (e.g. name@upi)">
+                            </div>
+                            <div id="cardFields" style="display:none;">
+                                <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16">
+                                <div class="form-row">
+                                    <input type="text" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+                                    <input type="text" id="cardCvv" placeholder="CVV" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn place-order-btn">Place Order 🎉</button>
+
+                    </form>
+                    <div class="order-success" id="orderSuccess">
+                        <h2>🎉 Order Placed Successfully!</h2>
+                        <p>Thank you for shopping with Fragrance Haven!</p>
+                        <p style="margin-top:10px;">Your order will be delivered within 3-5 business days.</p>
+                        <a href="index.html" class="btn" style="margin-top:20px;">Continue Shopping ➜</a>
+                    </div>
+
+                </div>
+                <div class="checkout-summary">
+                    <h3>🧾 Your Order</h3>
+                    <div id="checkoutItemsDiv">
+                        <p style="color:#888; text-align:center; padding:15px;">Loading your cart...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="copyright">© 2026 Fragrance Haven</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        var paymentSelect = document.getElementById("paymentMethod");
+        if (paymentSelect != null) {
+            paymentSelect.onchange = function() {
+                var val = this.value;
+                var upiField = document.getElementById("upiField");
+                var cardFields = document.getElementById("cardFields");
+                upiField.style.display = "none";
+                cardFields.style.display = "none";
+                if (val == "upi") {
+                    upiField.style.display = "block";
+                } else if (val == "card") {
+                    cardFields.style.display = "block";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

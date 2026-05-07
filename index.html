@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragrance Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="png" href="logo.jpeg">
+</head>
+<body>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <div class="navbar" id="mainNavbar">
+        <div class="logo">
+            <img src="logo.jpeg" width="125px" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="#newarrivals">NEW ARRIVALS</a></li>
+                <li><a href="#shop">SHOP NOW</a></li>
+                <li><a href="#deals">DEALS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="index5.html">ACCOUNT</a></li>
+                <li><a href="index9.html">🛒 CART</a></li>
+            </ul>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search perfumes...">
+            <button id="searchBtn">&#128269;</button>
+        </div>
+    </div>
+
+    
+    <section id="home" class="section-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>LUXURY IN<br>EVERY DROP!</h1>
+                    <p>Experience the art of fragrance with our premium collection.<br>
+                    Each perfume is crafted to deliver long-lasting freshness and a unique identity,<br>
+                    helping you express yourself with confidence and elegance.</p>
+                    <a href="#products" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="PIC ONE .jpeg" alt="hero perfume">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 2 — FEATURED CATEGORIES ===================== -->
+    <section id="featured" class="section-featured">
+        <div class="container">
+            <h2 class="section-title">Featured Collections</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="pics111.jpeg" alt="collection 1">
+                </div>
+                <div class="col-3">
+                    <img src="pics 222.jpeg" alt="collection 2">
+                </div>
+                <div class="col-3">
+                    <img src="pics333.jpeg" alt="collection 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 3 — PRODUCTS ===================== -->
+    <section id="products" class="section-products">
+        <div class="container">
+            <h2 class="section-title">Our Perfume Collection</h2>
+
+            <div class="category-filter">
+                <button class="category-btn active-cat" data-category="all">All</button>
+                <button class="category-btn" data-category="men">Men</button>
+                <button class="category-btn" data-category="women">Women</button>
+                <button class="category-btn" data-category="unisex">Unisex</button>
+            </div>
+
+            <div class="product-grid">
+
+                <div class="product-card" data-category="men">
+                    <img src="pics444.jpeg" alt="Royal Oud">
+                    <h3>Royal Oud</h3>
+                    <p>₹1999</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="product-card" data-category="men">
+                    <img src="pics333.jpeg" alt="Dark Musk">
+                    <h3>Dark Musk</h3>
+                    <p>₹1799</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="product-card" data-category="women">
+                    <img src="pics555.jpeg" alt="Midnight Rose">
+                    <h3>Midnight Rose</h3>
+                    <p>₹1499</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="product-card" data-category="women">
+                    <img src="pics111.jpeg" alt="Vanilla Mist">
+                    <h3>Vanilla Mist</h3>
+                    <p>₹999</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="product-card" data-category="unisex">
+                    <img src="pics 222.jpeg" alt="Ocean Breeze">
+                    <h3>Ocean Breeze</h3>
+                    <p>₹1299</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="product-card" data-category="unisex">
+                    <img src="pics666.jpeg" alt="Golden Essence">
+                    <h3>Golden Essence</h3>
+                    <p>₹2199</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 4 — NEW ARRIVALS ===================== -->
+    <section id="newarrivals" class="section-newarrivals">
+        <div class="container">
+            <h2 class="section-title">✨ New Arrivals</h2>
+            <p class="section-sub">Explore our latest luxury fragrances</p>
+
+            <div class="category-filter">
+                <button class="category-btn active-cat" data-category="all" data-group="arrivals">All</button>
+                <button class="category-btn" data-category="men" data-group="arrivals">Men</button>
+                <button class="category-btn" data-category="women" data-group="arrivals">Women</button>
+                <button class="category-btn" data-category="unisex" data-group="arrivals">Unisex</button>
+            </div>
+
+            <div class="arrival-grid">
+
+                <div class="arrival-card" data-category="unisex">
+                    <span class="tag">NEW</span>
+                    <img src="pics666.jpeg" alt="Velvet Night">
+                    <h3>Velvet Night</h3>
+                    <p>₹2199</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="arrival-card" data-category="men">
+                    <span class="tag">NEW</span>
+                    <img src="pics777.jpeg" alt="Golden Aura">
+                    <h3>Golden Aura</h3>
+                    <p>₹2499</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="arrival-card" data-category="women">
+                    <span class="tag">NEW</span>
+                    <img src="pics888.jpeg" alt="Crystal Bloom">
+                    <h3>Crystal Bloom</h3>
+                    <p>₹1999</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="arrival-card" data-category="men">
+                    <span class="tag">NEW</span>
+                    <img src="pics999.jpeg" alt="Dark Desire">
+                    <h3>Dark Desire</h3>
+                    <p>₹2299</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 5 — SHOP ===================== -->
+    <section id="shop" class="section-shop">
+        <div class="container">
+            <h2 class="section-title">🛍️ Shop Our Collection</h2>
+
+            <div class="category-filter">
+                <button class="category-btn active-cat" data-category="all" data-group="shop">All</button>
+                <button class="category-btn" data-category="men" data-group="shop">Men</button>
+                <button class="category-btn" data-category="women" data-group="shop">Women</button>
+                <button class="category-btn" data-category="unisex" data-group="shop">Unisex</button>
+            </div>
+
+            <div class="filter">
+                <select id="sortPrice">
+                    <option value="default">Sort by Price</option>
+                    <option value="lowtohigh">Low to High</option>
+                    <option value="hightolow">High to Low</option>
+                </select>
+            </div>
+
+            <div class="shop-grid">
+
+                <div class="shop-card" data-category="men">
+                    <img src="picture1.jpeg" alt="Royal Oud">
+                    <h3>Royal Oud</h3>
+                    <p>₹1999</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="men">
+                    <img src="picture6.jpeg" alt="Dark Musk">
+                    <h3>Dark Musk</h3>
+                    <p>₹1799</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="women">
+                    <img src="pitcture2.jpeg" alt="Midnight Rose">
+                    <h3>Midnight Rose</h3>
+                    <p>₹1499</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="women">
+                    <img src="picture5.jpeg" alt="Vanilla Mist">
+                    <h3>Vanilla Mist</h3>
+                    <p>₹999</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="unisex">
+                    <img src="picture4.jpeg" alt="Ocean Breeze">
+                    <h3>Ocean Breeze</h3>
+                    <p>₹1299</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+                <div class="shop-card" data-category="unisex">
+                    <img src="picture7.jpeg" alt="Golden Essence">
+                    <h3>Golden Essence</h3>
+                    <p>₹2199</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 6 — DEALS ===================== -->
+    <section id="deals" class="section-deals">
+        <div class="container">
+            <h2 class="section-title">🔥 Exclusive Deals</h2>
+            <p class="section-sub">Grab luxury fragrances at special prices</p>
+
+            <div class="deals-grid">
+
+                <div class="deal-card" data-category="men">
+                    <span class="discount">-30%</span>
+                    <img src="pics111.jpeg" alt="Royal Oud">
+                    <h3>Royal Oud</h3>
+                    <p class="old-price">₹1999</p>
+                    <p class="new-price">₹1399</p>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="deal-card" data-category="women">
+                    <span class="discount">-25%</span>
+                    <img src="pics666.jpeg" alt="Midnight Rose">
+                    <h3>Midnight Rose</h3>
+                    <p class="old-price">₹1499</p>
+                    <p class="new-price">₹1125</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="deal-card" data-category="unisex">
+                    <span class="discount">-40%</span>
+                    <img src="pics777.jpeg" alt="Ocean Breeze">
+                    <h3>Ocean Breeze</h3>
+                    <p class="old-price">₹1299</p>
+                    <p class="new-price">₹779</p>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <div class="deal-card" data-category="women">
+                    <span class="discount">-20%</span>
+                    <img src="pics444.jpeg" alt="Vanilla Mist">
+                    <h3>Vanilla Mist</h3>
+                    <p class="old-price">₹999</p>
+                    <p class="new-price">₹799</p>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 7 — ABOUT / TEAM ===================== -->
+    <section id="about" class="section-about">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <div class="row">
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/300" alt="Aditya Kohli">
+                    <h3>Aditya Kohli</h3>
+                    <p>Founder & Developer</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/300" alt="Ajandeep Kaur">
+                    <h3>Ajandeep Kaur</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/300" alt="Priyanshi Kackar">
+                    <h3>Priyanshi Kackar</h3>
+                    <p>Marketing Head</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://via.placeholder.com/300" alt="Sudarshana Dutta">
+                    <h3>Sudarshana Dutta</h3>
+                    <p>Content & Branding</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION 8 — CONTACT ===================== -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-sub">We would love to hear from you ✨</p>
+            <div class="contact-box">
+                <form id="contactForm">
+                    <input type="text" id="contactName" placeholder="Your Name" required>
+                    <input type="email" id="contactEmail" placeholder="Your Email" required>
+                    <textarea rows="5" id="contactMessage" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Our Details</h3>
+                    <p>📧 Email: fragranceghhaven@gmail.com</p>
+                    <p>📞 Phone: +91 9876543210</p>
+                    <p>📍 Location: India</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <div class="fotter">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="playstore.png" alt="playstore">
+                        <img src="appstore2.png" alt="appstore">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.jpeg" alt="logo">
+                    <p>Fragrance Haven — Where Elegance Finds Its Scent..</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#coupons">Coupons</a></li>
+                        <li><a href="#return policy">Return Policy</a></li>
+                        <li><a href="#read blog">Read Blog</a></li>
+                        <li><a href="#join">Join Club</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2026 - Fragrance Haven</p>
+        </div>
+    </div>
+
+    <!-- back to top button -->
+    <button id="backToTop" title="Go to top">&#8679;</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

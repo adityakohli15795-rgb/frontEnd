@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - Fragrance Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" width=125px alt="logo">
+        </div>
+        <nav>
+           <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index4.html">PRODUCTS</a></li>
+                <li><a href="index2.html">ABOUT</a></li>
+                <li><a href="index3.html">CONTACT US</a></li>
+                <li><a href="index5.html">ACCOUNT</a></li>
+                <li><a href="index6.html">NEW ARRIVALS</a></li>
+                <li><a href="index7.html">SHOP NOW</a></li>
+                <li><a href="index8.html">DEALS</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search perfumes...">
+            <button id="searchBtn">&#128269;</button>
+        </div>
+    </div>
+
+    <div class="new-arrivals">
+        <div class="container">
+            <h1>New Arrivals</h1>
+            <p>Explore our latest luxury fragrances</p>
+            <div class="category-filter">
+                <button class="category-btn active-cat" data-category="all">All</button>
+                <button class="category-btn" data-category="men">Men</button>
+                <button class="category-btn" data-category="women">Women</button>
+                <button class="category-btn" data-category="unisex">Unisex</button>
+            </div>
+
+            <div class="arrival-grid">
+                <div class="arrival-card" data-category="unisex">
+                    <img src="pics666.jpeg" alt="Velvet Night">
+                    <h3>Velvet Night</h3>
+                    <p>₹2199</p>
+                    <span class="tag">NEW</span>
+                    <span class="cat-tag unisex-tag">Unisex</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <div class="arrival-card" data-category="men">
+                    <img src="pics777.jpeg" alt="Golden Aura">
+                    <h3>Golden Aura</h3>
+                    <p>₹2499</p>
+                    <span class="tag">NEW</span>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <div class="arrival-card" data-category="women">
+                    <img src="pics888.jpeg" alt="Crystal Bloom">
+                    <h3>Crystal Bloom</h3>
+                    <p>₹1999</p>
+                    <span class="tag">NEW</span>
+                    <span class="cat-tag women-tag">Women</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+                <!-- Men -->
+                <div class="arrival-card" data-category="men">
+                    <img src="pics999.jpeg" alt="Dark Desire">
+                    <h3>Dark Desire</h3>
+                    <p>₹2299</p>
+                    <span class="tag">NEW</span>
+                    <span class="cat-tag men-tag">Men</span>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="copyright">© 2026 Fragrance Haven</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
